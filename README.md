@@ -5,4 +5,4 @@
 ##### Verify
 - python --version
 
-![Alt text](https://res.cloudinary.com/dnknslaku/image/upload/v1737625833/1_c70hbo.png)
+![Alt text](https://res.cloudinary.com/dnknslaku/image/upload/w_500/v1737625833/1_c70hbo.png)
