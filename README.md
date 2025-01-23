@@ -22,6 +22,7 @@ PS C:\Users\siddh\Downloads\python> PYTHON
 ![Alt text](https://res.cloudinary.com/dnknslaku/image/upload/w_500/v1737627260/Screenshot_105_ectjl7.png)
 
 ### Mutable and Immutable in Python
+![Alt text](https://res.cloudinary.com/dnknslaku/image/upload/v1737628228/mutable-and-immutable-in-python_rzz8jy.png)
 ```python
 PS C:\Users\siddh\Downloads\python> python
 Python 3.12.3
