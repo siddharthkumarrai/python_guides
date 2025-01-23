@@ -11,7 +11,9 @@
 ![Alt text](https://res.cloudinary.com/dnknslaku/image/upload/v1737625833/1_c70hbo.png)
 
 ### Python Shall
-- PS C:\Users\siddh\Downloads\python> PYTHON
-- >>> import os
-- >>> os.getcwd()
+```python
+PS C:\Users\siddh\Downloads\python> PYTHON
+>>> import os
+>>> os.getcwd()
   'C:\\Users\\siddh\\Downloads\\python'
+```
