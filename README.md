@@ -21,3 +21,20 @@ PS C:\Users\siddh\Downloads\python> PYTHON
 ### Python Memory
 ![Alt text](https://res.cloudinary.com/dnknslaku/image/upload/w_500/v1737627260/Screenshot_105_ectjl7.png)
 
+### Mutable and Immutable in Python
+```python
+PS C:\Users\siddh\Downloads\python> python
+Python 3.12.3
+>>> l1 = [1,2,3]
+>>> l2 = l1
+>>> l1
+[1, 2, 3]
+>>> l2
+[1, 2, 3]
+>>> l2[0] = 55
+>>> l1
+[55, 2, 3]
+>>> l2
+[55, 2, 3]
+```
+
