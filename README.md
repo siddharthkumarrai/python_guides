@@ -19,5 +19,5 @@ PS C:\Users\siddh\Downloads\python> PYTHON
   'C:\\Users\\siddh\\Downloads\\python'
 ```
 ### Python Memory
-![Alt text](https://res.cloudinary.com/dnknslaku/image/upload/v1737627260/Screenshot_105_ectjl7.png)
+![Alt text](https://res.cloudinary.com/dnknslaku/image/upload/w_500/v1737627260/Screenshot_105_ectjl7.png)
 
