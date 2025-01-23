@@ -2,7 +2,7 @@
 
 ### Installation
 - https://www.python.org/
-##### Verify
+### Verify
 - python --version
 
 > [!NOTE]
