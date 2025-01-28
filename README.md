@@ -51,4 +51,82 @@ Python 3.12.3
 >>> p2
 [4, 5, 6]
 ```
+## NUMBERS IN PYTHON
+```python
+>>> 55 + 2.53
+57.53
+>>> "sidd" + 3
+TypeError: can only concatenate str (not "int") to str
+>>>
+>>> int(2.53)
+2
+>>> float(55)
+55.0
+>>>
+```
+```python
+>>> x = 1
+>>> y = 2
+>>> z = 3
+>>> x,y,z
+(1, 2, 3)
+>>> x<y<z
+True
+>>> x < y and y < z
+True
+>>> 1 == 2 < 3
+False
+>>> 1 == 2 and 2 < 3
+False
+```
+```python
+>>> import math
+>>> math.floor(3.7)  # closest bottom value
+3
+>>> math.trunc(2.8)  # towards zero 
+2
+```
+```python
+>>> (2+1j)*3
+(6+3j)
+```
+```python
+>>> 0o20    # octal   oct(16)
+16
+>>> 0xFF    # hexal   hex(255)
+255
+>>> 0b1000  # binary  bin(8)
+8
+>>> int("64",8) # convert in octal
+52
+```
+```import random
+>>> import random
+>>> random.random()
+0.6036513999382547
+>>> random.randint(1,100)
+6
+>>> random.choice(list)
+>>> random.shuffle(list)
+```
+```python
+>>> 0.1+0.1+0.1-0.3
+5.551115123125783e-17
+>>> (0.1+0.1+0.1)-0.3
+5.551115123125783e-17
+
+>>> from decimal import Decimal        # decimal context manager
+>>> Decimal('0.1')+Decimal('0.1')+Decimal('0.1')
+Decimal('0.3')
+
+>>> from fractions import Fraction
+```
+```python
+>>> setone = {1,2,3,4}
+>>> & -> intersection
+>>> | -> union
+>>> setone - {1,2,3,4}
+set()
+```
+
 
