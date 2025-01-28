@@ -100,7 +100,7 @@ False
 >>> int("64",8) # convert in octal
 52
 ```
-```import random
+```python
 >>> import random
 >>> random.random()
 0.6036513999382547
