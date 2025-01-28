@@ -128,5 +128,25 @@ Decimal('0.3')
 >>> setone - {1,2,3,4}
 set()
 ```
+## STRINGS IN PYTHON
+1.) String Declaration
+```python
+name = "Siddharth"
+repo_count = 50
+print(f"Hello, my name is {name} and my repo count is {repo_count}") 
+
+# Template Literals
+- ✅ Using f-string (f"{} syntax) – Recommended          print(f"My name is {name} and I am {age} years old.")  
+- ❌ Using .format() Method (Older Method)               print("My name is {} and I am {} years old.".format(name, age))
+- ❌ Using % Formatting (Outdated in Modern Python)      print("My name is %s and I am %d years old." % (name, age))
+
+
+
+You can directly perform calculations inside {} in an f-string:
+a = 5
+b = 10
+print(f"Sum of {a} and {b} is {a + b}")
+```
+
 
 
