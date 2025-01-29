@@ -227,6 +227,33 @@ print([element for element in my_list2 if element > 1])  # Output: [2, 3, 4, 5]
 from functools import reduce
 print(reduce(lambda acc, x: acc + x, my_list2))  # Output: 15
 ```
+- Merge List in Python
+```python
+marvel_heros = ["thor", "ironman", "spider"]
+dc_heros = ["super", "flash", "batman"]
 
+# Method 1: Using + operator
+all_heros = marvel_heros + dc_heros
+print(all_heros)  
+# Output: ['thor', 'ironman', 'spider', 'super', 'flash', 'batman']
+
+# Method 2: Using extend() (Modifies the original list)
+marvel_heros.extend(dc_heros)
+print(marvel_heros)  
+# Output: ['thor', 'ironman', 'spider', 'super', 'flash', 'batman']
+
+# Method 3: Using unpacking (Recommended for better readability)
+all_new_heros = [*marvel_heros, *dc_heros]
+print(all_new_heros)  
+# Output: ['thor', 'ironman', 'spider', 'super', 'flash', 'batman']
+```
+- List Comprehension
+```python
+squares = [x**2 for x in range(1, 6)]
+print(squares)  # Output: [1, 4, 9, 16, 25]
+
+even_numbers = [x for x in range(10) if x % 2 == 0]
+print(even_numbers)  # Output: [0, 2, 4, 6, 8]
+```
 
 
