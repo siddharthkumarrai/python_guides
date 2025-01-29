@@ -256,7 +256,7 @@ even_numbers = [x for x in range(10) if x % 2 == 0]
 print(even_numbers)  # Output: [0, 2, 4, 6, 8]
 ```
 ## Dictionary
-1. Creating Objects (Dictionaries)
+1.)  Creating Objects (Dictionaries)
    - Using  { }  (Dictionary Literal)
 ```python
 user = {
@@ -273,5 +273,64 @@ user = {
 ```python
 user = dict(name="Siddharth", age=19, location="Delhi")
 ```
+2.)  Accessing Values
+```python
+print(user["email"])          # sidd@gmail.com
+print(user.get("email"))      # sidd@gmail.com
+print(user["full Name"])      # Siddharth Kumar Rai
+print(user.get("username", "Not Found"))  # Default value if key is missing
+```
+3.)  Adding & Modifying Values
+```python
+user["profession"] = "Developer"
+user["age"] = 20
+```
+4.)  Checking if a Key Exists
+```python
+print("email" in user)  # True
+print(user.keys())      # dict_keys(['name', 'age', 'location', 'email', 'is_logged_in', 'last_login_days', 'full Name'])
+print(user.values())    # dict_values(['Siddharth', 19, 'Delhi', 'sidd@gmail.com', False, ['Monday', 'Saturday'], 'Siddharth Kumar Rai'])
+print(user.items())     # [('name', 'Siddharth'), ('age', 19), ...]
+```
+5.)  Deleting a Key
+```python
+del user["email"]
+user.pop("location")
+```
+6.)  Merging Dictionaries
+```python
+obj1 = {1: "a", 2: "b"}
+obj2 = {3: "c", 4: "d"}
+
+obj3 = {**obj1, **obj2}  # {1: 'a', 2: 'b', 3: 'c', 4: 'd'}
+obj4 = obj1 | obj2       # Python 3.9+ syntax for merging
+```
+7.)  Dictionary Comprehension
+```python
+squared = {x: x**2 for x in range(5)}  # {0: 0, 1: 1, 2: 4, 3: 9, 4: 16}
+```
+8.)  Looping Through Dictionary
+```python
+user = {
+    "name": "Siddharth",
+    "age": 19,
+    "location": "Delhi",
+    "email": "sidd@gmail.com"
+}
+
+# Loop through keys
+for key in user:
+    print(key, ":", user[key])
+
+# Loop through values
+for value in user.values():
+    print(value)
+
+# Loop through key-value pairs
+for key, value in user.items():
+    print(f"{key}: {value}")
+```
+
+
 
 
