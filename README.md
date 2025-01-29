@@ -209,6 +209,24 @@ print(sorted([3, 2, 1]))                # Output: [1, 2, 3]
 print([1, 2, 3] * 2)                    # Output: [1, 2, 3, 1, 2, 3]
 print([1, 2, 3, 4, 5].copy())           # Output: [1, 2, 3, 4, 5]
 ```
+- String Conversion
+```python
+print("-".join(map(str, my_list2)))  # Output: "0-4-3-4-5"
+```
+- Iteration
+```python
+my_list2 = [0, 1, 2, 3, 4, 5]
+print(my_list2)  # [0, 1, 2, 3, 4, 5]
+
+for element in my_list2:
+    print(element)  # Output: 0 1 2 3 4 5
+
+print([element * 2 for element in my_list2])  # Output: [0, 2, 4, 6, 8, 10]
+print([element for element in my_list2 if element > 1])  # Output: [2, 3, 4, 5]
+
+from functools import reduce
+print(reduce(lambda acc, x: acc + x, my_list2))  # Output: 15
+```
 
 
 
