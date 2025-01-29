@@ -330,6 +330,26 @@ for value in user.values():
 for key, value in user.items():
     print(f"{key}: {value}")
 ```
+##  TUPLE
+1.) Tuple Creation
+```python
+# Empty tuple
+empty_tuple = ()
+
+# Tuple with values
+my_tuple = (1, 2, 3, "sidd", True, None)
+
+# Tuple without parentheses (valid but not recommended)
+my_tuple2 = 1, 2, 3  
+
+# Single element tuple (comma जरूरी है)
+single_element_tuple = (5,)  
+print(type(single_element_tuple))  # Output: <class 'tuple'>
+
+# Using tuple() constructor
+my_tuple3 = tuple([1, 2, 3, 4])  
+print(my_tuple3)  # Output: (1, 2, 3, 4)
+```
 
 
 
