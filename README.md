@@ -188,9 +188,26 @@ my_list2.pop(0)          # [0, 1, 2, 3, 4, 5]
 ```
 - Accessing Elements
 ```python
-print(my_list2.index(2))         # Output: 2 (not found -> raises ValueError)
-print(my_list2.count(2))         # Output: 1
-print(9 in my_list2)             # Output: False
+my_list = ["sidd","raj","sagar","sidd"]
+
+print(my_list.index("raj"))      # Output: 1 (not found -> raises ValueError)
+print(my_list.count("sidd"))     # Output: 2
+print("sagar" in my_list)        # Output: True        
+```
+- Manipulating Elements
+```python
+my_list2 = [0, 1, 2, 3, 4, 5]
+print(my_list2)  # [0, 1, 2, 3, 4, 5]
+
+# Splicing (Removing & Adding Elements)
+my_list2[1:3] = [4]   
+print(my_list2)  # Output: [0, 4, 3, 4, 5]
+
+# Other Operations
+print(list(reversed([1, 2, 3])))        # Output: [3, 2, 1]
+print(sorted([3, 2, 1]))                # Output: [1, 2, 3]
+print([1, 2, 3] * 2)                    # Output: [1, 2, 3, 1, 2, 3]
+print([1, 2, 3, 4, 5].copy())           # Output: [1, 2, 3, 4, 5]
 ```
 
 
