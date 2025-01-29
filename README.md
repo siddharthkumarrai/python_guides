@@ -257,7 +257,7 @@ print(even_numbers)  # Output: [0, 2, 4, 6, 8]
 ```
 ## Dictionary
 1. Creating Objects (Dictionaries)
-   - Using {} (Dictionary Literal)
+   - Using  { }  (Dictionary Literal)
 ```python
 user = {
     "name": "Siddharth",
@@ -269,7 +269,7 @@ user = {
     "full Name": "Siddharth Kumar Rai"
 }
 ```
-  - Using dict() Constructor
+  - Using dict ( )  Constructor
 ```python
 user = dict(name="Siddharth", age=19, location="Delhi")
 ```
