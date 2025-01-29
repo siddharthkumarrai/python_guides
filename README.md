@@ -255,5 +255,23 @@ print(squares)  # Output: [1, 4, 9, 16, 25]
 even_numbers = [x for x in range(10) if x % 2 == 0]
 print(even_numbers)  # Output: [0, 2, 4, 6, 8]
 ```
+## Dictionary
+1. Creating Objects (Dictionaries)
+   - Using {} (Dictionary Literal)
+```python
+user = {
+    "name": "Siddharth",
+    "age": 19,
+    "location": "Delhi",
+    "email": "sidd@gmail.com",
+    "is_logged_in": False,
+    "last_login_days": ["Monday", "Saturday"],
+    "full Name": "Siddharth Kumar Rai"
+}
+```
+  - Using dict() Constructor
+```python
+user = dict(name="Siddharth", age=19, location="Delhi")
+```
 
 
