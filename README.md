@@ -367,6 +367,111 @@ print(my_tuple[:3])     # Output: (10, 20, 30)
 print(my_tuple[::2])    # Output: (10, 30, 50)  (हर दूसरा element)
 print(my_tuple[::-1])   # Output: (50, 40, 30, 20, 10)  (Reverse tuple)
 ```
+3.) Tuple Methods
+```python
+my_tuple = (1, 2, 3, 4, 2, 5, 2)
+
+print(my_tuple.count(2))    # Output: 3 (2 कितनी बार आया)
+print(my_tuple.index(3))    # Output: 2 (3 का index)
+```
+4.) Tuple Packing & Unpacking
+```python
+# Packing (एक tuple में multiple values रखना)
+packed_tuple = ("sidd", 21, "India")
+
+# Unpacking (tuple values को अलग-अलग variables में डालना)
+name, age, country = packed_tuple
+
+print(name)     # Output: sidd
+print(age)      # Output: 21
+print(country)  # Output: India
+```
+> [!WARNING]
+> ⚠ Note: Unpacking करते समय values और variables की count match होनी चाहिए, नहीं तो error आएगा।
+
+5.) Merging Tuples (Concatenation & Repetition)
+```python
+tuple1 = (1, 2, 3)
+tuple2 = (4, 5, 6)
+
+# Concatenation (जोड़ना)
+merged_tuple = tuple1 + tuple2
+print(merged_tuple)  # Output: (1, 2, 3, 4, 5, 6)
+
+# Repetition (एक tuple को multiple बार repeat करना)
+repeated_tuple = tuple1 * 3
+print(repeated_tuple)  # Output: (1, 2, 3, 1, 2, 3, 1, 2, 3)
+```
+6.) Converting Between List & Tuple
+```python
+# Tuple to List (Modification के लिए)
+tuple1 = (1, 2, 3)
+list1 = list(tuple1)  # Convert to list
+list1.append(4)       # List को modify किया
+tuple1 = tuple(list1)  # फिर से tuple में बदला
+print(tuple1)  # Output: (1, 2, 3, 4)
+
+# List to Tuple
+list2 = [10, 20, 30]
+tuple2 = tuple(list2)
+print(tuple2)  # Output: (10, 20, 30)
+```
+7.) Checking If an Element Exists in a Tuple
+```python
+my_tuple = ("apple", "banana", "cherry")
+
+print("banana" in my_tuple)  # Output: True
+print("grape" in my_tuple)   # Output: False
+```
+8.)   Looping Over a Tuple
+```python
+fruits = ("apple", "banana", "cherry")
+
+# For loop
+for fruit in fruits:
+    print(fruit)
+
+output: apple
+        banana
+        cherry
+
+# Using enumerate() (index + value)
+for index, fruit in enumerate(fruits):
+    print(f"Index {index}: {fruit}")
+
+output: Index 0: apple
+        Index 1: banana
+        Index 2: cherry
+```
+9.) Finding Maximum, Minimum, and Sum in a Tuple
+```python
+numbers = (5, 2, 9, 1, 7)
+
+print(max(numbers))  # Output: 9
+print(min(numbers))  # Output: 1
+print(sum(numbers))  # Output: 24
+```
+10.) Tuple as Dictionary Key (Immutable होने की वजह से Possible)
+```python
+# Tuples can be dictionary keys, unlike lists
+locations = {
+    (28.6139, 77.2090): "Delhi",
+    (19.0760, 72.8777): "Mumbai"
+}
+
+print(locations[(28.6139, 77.2090)])  # Output: Delhi
+```
+11.) Checking if an Object is a Tuple
+```python
+my_tuple = (1, 2, 3)
+print(isinstance(my_tuple, tuple))  # Output: True
+
+my_list = [1, 2, 3]
+print(isinstance(my_list, tuple))  # Output: False
+```
+
+
+
 
 
 
