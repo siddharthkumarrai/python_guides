@@ -351,7 +351,7 @@ my_tuple3 = tuple([1, 2, 3, 4])
 print(my_tuple3)  # Output: (1, 2, 3, 4)
 ```
 > [!WARNING]
-> () के बिना tuple बन सकता है, लेकिन readability के लिए parentheses इस्तेमाल करना बेहतर होता है। <br>
+> ( ) के बिना tuple बन सकता है, लेकिन readability के लिए parentheses इस्तेमाल करना बेहतर होता है। <br> <br>
 > Single-element tuple में , लगाना जरूरी है, वरना ये integer या string माना जाएगा।
 
 
