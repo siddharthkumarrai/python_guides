@@ -469,6 +469,24 @@ print(isinstance(my_tuple, tuple))  # Output: True
 my_list = [1, 2, 3]
 print(isinstance(my_list, tuple))  # Output: False
 ```
+## CONDITIONALS
+```python
+if age < 13 :
+    print("you are chlid")
+elif age < 19 :
+    print("you are teenager")
+elif age < 59 :
+    print("you are adlult")
+else:
+    print("you are senior")
+```
+```python
+price = 12 if age >= 18 else 8
+```
+```python
+if (year % 400 == 0) or  (year % 4 == 0) and (year % 100 != 0):
+    print("leap year")
+```
 
 
 
