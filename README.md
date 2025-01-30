@@ -354,6 +354,20 @@ print(my_tuple3)  # Output: (1, 2, 3, 4)
 > ( ) के बिना tuple बन सकता है, लेकिन readability के लिए parentheses इस्तेमाल करना बेहतर होता है। <br> <br>
 > Single-element tuple में , लगाना जरूरी है, वरना ये integer या string माना जाएगा।
 
+2️.)  Accessing Elements (Indexing & Slicing)
+```python
+my_tuple = (10, 20, 30, 40, 50)
+
+print(my_tuple[1])   # Output: 20  (0-based indexing)
+print(my_tuple[-1])  # Output: 50  (Last element)
+
+# Slicing (start:end:step)
+print(my_tuple[1:4])    # Output: (20, 30, 40)
+print(my_tuple[:3])     # Output: (10, 20, 30)
+print(my_tuple[::2])    # Output: (10, 30, 50)  (हर दूसरा element)
+print(my_tuple[::-1])   # Output: (50, 40, 30, 20, 10)  (Reverse tuple)
+```
+
 
 
 
