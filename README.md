@@ -487,6 +487,12 @@ price = 12 if age >= 18 else 8
 if (year % 400 == 0) or  (year % 4 == 0) and (year % 100 != 0):
     print("leap year")
 ```
+## LOOPS
+- for loop
+```python
+for i in range(0,n+1):
+    print(i)
+```
 
 
 
