@@ -493,6 +493,17 @@ if (year % 400 == 0) or  (year % 4 == 0) and (year % 100 != 0):
 for i in range(0,n+1):
     print(i)
 ```
+- while loop
+```python
+n = 3
+fac = 1
+while True:
+    fac = fac * n
+    n = n-1
+    if n < 1:
+        break
+print(fac)
+```
 
 
 
