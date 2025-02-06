@@ -506,7 +506,46 @@ print(fac)
 ```
 ## behind the scenes in iterator (loops)
 ![Alt text](https://res.cloudinary.com/dnknslaku/image/upload/v1738851784/Screenshot_165_r9qhy8.png)
-
+```python
+>>> f = open("sidd.py")
+>>> f.readline()
+'import os\n'
+```
+```python
+>>> f.__next__()
+'print("siddharth")\n'
+>>> f.__next__()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+StopIteration
+>>>
+```
+```python
+>>> for line in open("sidd.py").readlines():
+...     print(line)
+... 
+import os
+os.getcwd()
+print("siddharth")
+>>>
+```
+```python
+>>> for line in open("sidd.py"):
+...     print(line)
+...
+```
+```python
+>>> f = open("sidd.py")
+>>> while True:
+...     line = f.readline()
+...     if not line: break
+...     print(line)
+... 
+import os
+os.getcwd()
+print("siddharth")
+>>>
+```
 
 
 
