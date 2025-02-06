@@ -560,6 +560,8 @@ print("siddharth")
 >>> f = open("sidd.py")
 >>> iter(f) is f
 True
+>>> iter(f) is f.__iter__()
+True
 ```
 
 
