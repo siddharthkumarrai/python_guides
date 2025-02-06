@@ -504,6 +504,9 @@ while True:
         break
 print(fac)
 ```
+## behind the scenes in iterator (loops)
+```python
+![Alt text](https://res.cloudinary.com/dnknslaku/image/upload/v1738851784/Screenshot_165_r9qhy8.png)
 
 
 
