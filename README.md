@@ -546,6 +546,21 @@ os.getcwd()
 print("siddharth")
 >>>
 ```
+```python
+>>> myList = [1,2,3,4]
+>>> L = iter(myList)
+>>> L
+<list_iterator object at 0x000001F85121BD00>
+>>> L.__next__()
+1
+```
+> [!NOTE]
+>
+```python
+>>> f = open("sidd.py")
+>>> iter(f) is f
+True
+```
 
 
 
