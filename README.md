@@ -555,7 +555,7 @@ print("siddharth")
 1
 ```
 > [!NOTE]
-> 
+> IMPORTANT
 ```python
 >>> f = open("sidd.py")
 >>> iter(f) is f
