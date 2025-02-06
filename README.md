@@ -554,6 +554,12 @@ print("siddharth")
 >>> L.__next__()
 1
 ```
+```python
+>>> list = [1,2]
+>>> i = iter(list)
+>>> next(i)
+1
+```
 > [!NOTE]
 > IMPORTANT
 ```python
