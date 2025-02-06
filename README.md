@@ -562,6 +562,9 @@ print("siddharth")
 True
 >>> iter(f) is f.__iter__()
 True
+>>> list = [1,2]
+>>> iter(list) is list     
+False
 ```
 
 
