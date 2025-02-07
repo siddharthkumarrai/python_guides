@@ -587,7 +587,29 @@ False
 
     print(cube(3))
 ```
+- Multiple Argument (*args)
+```python
+    def sum_num(*args):
+        print(sum(args))
 
+    sum_num(1,2,3)                      // result: 5
+```
+- kwargs key,value arguments
+```python
+def kw_args(**kwargs):
+    print(kwargs)                        // output: {'name': 'sidd', 'roll_no': 17}
+
+kw_args(name = "sidd",roll_no = 17)
+```
+- Function with yield
+```python
+def print_even(limit):
+    for i in range(2,limit+1,2):
+        yield i
+    
+for i in print_even(10):
+    print(i)
+```
 
 
 
