@@ -572,6 +572,21 @@ True
 >>> iter(list) is list     
 False
 ```
+## functions
+```python
+   def square(number){                //  number are parameter  (function defination)
+        return number*number
+   }
+
+   sq = square(3)                     //  are argument  (function call)
+   print(sq)                          //  output: 9
+```
+- Lambda Function
+```python
+    cube = lambda x: x**3
+
+    print(cube(3))
+```
 
 
 
