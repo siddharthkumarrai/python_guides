@@ -607,7 +607,7 @@ def print_even(limit):
     for i in range(2,limit+1,2):
         yield i
     
-for i in print_even(10):
+for num in print_even(10):
     print(i)
 ```
 
