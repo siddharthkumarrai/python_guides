@@ -763,3 +763,22 @@ electric_car_one = Electric_Car("tata","safari","18KWH")
 print(isinstance(electric_car_one,Car))                # output: True
 print(isinstance(electric_car_one,Electric_Car))       # output: True
 ```
+- Multiple Inheritance
+  - two classes Battery and Engine, the ElectricCar class inherit from both, demonstrating multiple inheritance.
+```python
+class Battery:
+    def battery_info(self):
+        return "battery car"
+
+class Engine:
+    def engine_info(self):
+        return "engine car"
+    
+class Electric_car_two(Battery,Engine,Car):
+    pass
+
+electric_car_one = Electric_car_two("tata","safari")
+
+print(electric_car_one.battery_info())
+print(electric_car_one.engine_info())
+```
