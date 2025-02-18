@@ -706,6 +706,9 @@ print(Car.total_car)        # output:- 3
 ```
 - Static Method 
   - A static method is a method that is part of a class rather than an instance of that class
+    - 🔹 Static method instance se call ho sakta hai, lekin instance ka data use nahi kar sakta.
+    - 🔹 Static method class se call ho sakta hai, lekin class ka data bhi use nahi kar sakta.
+    - 🔹  Bas yeh ek normal function hai jo class ke andar likha gaya hai.
 ```python
 class Car:
     def general_description(self):  
