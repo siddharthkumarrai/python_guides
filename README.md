@@ -704,9 +704,23 @@ electric_car_one = Electric_Car("tesla","ev1","18KWH")
 print(car_one.total_car)    # output:- 3
 print(Car.total_car)        # output:- 3
 ```
+- Static Method 
+  - A static method is a method that is part of a class rather than an instance of that class
+```python
+class Car:
+    def general_description(self):  
+        return "car is a mean of transport"
 
+car_one = Car()
+print(car_one.general_description())  # ✅ Ye sahi chalega
+print(Car.general_description())      # ❌ Ye error dega -> missing 1 required positional argument: 'self'
 
+class Car:
+    @staticmethod
+    def general_description():
+        return "car is a mean of transport"
 
-
-
-
+car_one = Car()
+print(car_one.general_description())  # ✅ Instance se bhi chalega
+print(Car.general_description())      # ✅ Class se bhi chalega
+```
