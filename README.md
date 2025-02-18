@@ -610,6 +610,23 @@ def print_even(limit):
 for num in print_even(10):
     print(i)
 ```
+## OOP
+- Basic Class and Object
+  - Class Method and Self
+```python
+class Car:
+    def __init__(self,brand,model):
+        self.brand = brand
+        self.model = model
+
+    def full_name(self):
+        return f"{self.brand} {self.model}"
+
+car1 = Car("tata","safari")
+print(car1.full_name)
+```
+```python
+
 
 
 
