@@ -744,5 +744,22 @@ car_one = Car("tata","safari")
 car_one.model = "alto"      # Error
 
 print(car_one.model)
+```
+- Class Inheritance and isinstance() Function
+```python
+class Car:
+    def __init__(self,brand,model):
+        self.__brand = brand
+        self.__model = model
+    
 
+class Electric_Car(Car):
+    def __init__(self,brand,model,battery_size):
+        super().__init__(brand,model)
+        self.battery_size = battery_size
+
+electric_car_one = Electric_Car("tata","safari","18KWH")
+
+print(isinstance(electric_car_one,Car))                # output: True
+print(isinstance(electric_car_one,Electric_Car))       # output: True
 ```
