@@ -724,6 +724,6 @@ class Car:
         return "car is a mean of transport"
 
 car_one = Car()
-print(car_one.general_description())  # ✅ Instance se bhi chalega
+print(car_one.general_description())  # ✅ Instance se bhi chalega 
 print(Car.general_description())      # ✅ Class se bhi chalega
 ```
