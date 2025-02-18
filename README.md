@@ -730,20 +730,19 @@ print(Car.general_description())      # ✅ Class se bhi chalega
 - Property Decorators
   - a property decorator in the Car class to make the model attribute read-only.
 ```python
-
 class Car:
     def __init__(self,brand,model):
         self.__brand = brand
-        self.model = model
+        self.__model = model
     
     @property
     def model(self):
-        return self.model
-
+        return self.__model
 
 car_one = Car("tata","safari")
 
-car_one.model = "alto"
+car_one.model = "alto"      ---> errror
 
-print(car_one.model)      # output : -  Error
+print(car_one.model)
+
 ```
