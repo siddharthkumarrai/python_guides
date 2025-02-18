@@ -651,7 +651,7 @@ electric_car_one = Car("tesla","ev1")
 print(electric_car_one.get_brand())
 ```
 -  Polymorphism
-  - polymorphism by defining a method fuel_type in both Car and ElectricCar classes, but with different behaviors.
+    - polymorphism by defining a method fuel_type in both Car and ElectricCar classes, but with different behaviors.
 ```python
 class Car:
     def __init__(self,brand,model):
