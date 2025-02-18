@@ -741,7 +741,7 @@ class Car:
 
 car_one = Car("tata","safari")
 
-car_one.model = "alto"      ---> errror
+car_one.model = "alto"      # Error
 
 print(car_one.model)
 
