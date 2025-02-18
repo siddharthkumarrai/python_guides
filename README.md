@@ -745,7 +745,7 @@ car_one.model = "alto"      # Error
 
 print(car_one.model)
 ```
-- Class Inheritance and isinstance() Function
+- Class Inheritance and isinstance ( )  Function
 ```python
 class Car:
     def __init__(self,brand,model):
