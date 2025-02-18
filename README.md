@@ -626,6 +626,7 @@ car1 = Car("tata","safari")
 print(car1.full_name)
 ```
 - Inheritance
+  - ElectricCar class that inherits from the Car class and has an additional attribute battery_size.
 ```python
 class Electric_Car(Car):
     def __init__(self,brand,model,battery_size):
@@ -648,6 +649,33 @@ class Car:
 
 electric_car_one = Car("tesla","ev1")
 print(electric_car_one.get_brand())
+```
+-  Polymorphism
+  - polymorphism by defining a method fuel_type in both Car and ElectricCar classes, but with different behaviors.
+```python
+class Car:
+    def __init__(self,brand,model):
+        self.__brand = brand
+        self.model = model
+    
+    def fuel_type(self):
+        return f"car fuel diseal and petrol"
+
+
+
+class Electric_Car(Car):
+    def __init__(self,brand,model,battery_size):
+        super().__init__(brand,model)
+        self.battery_size = battery_size
+    
+    def fuel_type(self):
+        return f"car fuel Electric charges"
+
+car_one = Car("tesla","ev1")
+electric_car_one = Electric_Car("tesla","ev1","18KWH")
+
+print(car_one.fuel_type())
+print(electric_car_one.fuel_type())
 ```
 
 
