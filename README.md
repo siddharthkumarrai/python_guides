@@ -678,7 +678,7 @@ print(car_one.fuel_type())
 print(electric_car_one.fuel_type())
 ```
 - Class Variables
- - a class variable to Car that keeps track of the number of cars created.
+   - a class variable to Car that keeps track of the number of cars created.
 ```python
 class Car:
     total_car = 0
