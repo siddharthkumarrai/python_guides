@@ -817,9 +817,10 @@ match choice:
 ## try and except
 ```python
 try:
-    pass
-except:
-    pass
+    with open('youtube.txt','r') as file:
+        return json.load(file)
+except FileNotFoundError:
+    return []
 finally:
     pass
 ```
