@@ -814,3 +814,12 @@ match choice:
     case _:
         print("invalid choice")
 ```
+## try and except
+```python
+try:
+    pass
+except:
+    pass
+finally:
+    pass
+```
