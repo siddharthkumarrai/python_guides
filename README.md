@@ -842,4 +842,29 @@ y = enumerate(x)      # <enumerate object at 0x102017880>
 list(y)
 [(0,'sidd'), (1,'siddhu'), (2, 'siddharth')]
 ```
+## API HANDLING
+```python
+import requests
+
+def random_user_api_request():
+    url = "https://api.freeapi.app/api/v1/public/randomusers/user/random"
+    response = requests.get(url)
+    response_data = response.json()
+    print(response_data)
+
+    if response_data["success"] and "data" in response_data:
+        user_data = response_data["data"]
+        # print(user_data)
+        user_name = user_data["login"]["username"]
+        country_name = user_data["location"]["country"]
+        print(user_name)
+        print(country_name)
+    else:
+        raise Exception ("faild to fetch user detail")
+
+ random_user_api_request()
+```
+
+
+
 
