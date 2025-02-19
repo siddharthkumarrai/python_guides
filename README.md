@@ -802,3 +802,15 @@ def example_function(n):
 
 example_function(4)
 ```
+## Match case ( Switch case )
+```python
+choice = int(input("enter your choice"))
+
+match choice:
+    case 1 :
+        print("1")
+    case 2 :
+        exit()
+    case _:
+        print("invalid choice")
+```
