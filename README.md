@@ -836,6 +836,7 @@ with open('youtube.txt','w') as file:
     file.write('siddharth_yadav')
 ```
 ## enumerate
+```python
 x = ("sidd","siddhu","siddharth")
 y = enumerate(x)      # <enumerate object at 0x102017880>
 list(y)
