@@ -817,10 +817,22 @@ match choice:
 ## try and except
 ```python
 try:
-    with open('youtube.txt','r') as file:
-        return json.load(file)
-except FileNotFoundError:
-    return []
+    pass
+except:
+    pass
 finally:
     pass
+```
+## File Handling
+```python
+file = open('youtube.txt','w')
+
+try:
+    file.write('siddharth_kumar_rai')
+finally:
+    file.close()
+
+with open('youtube.txt','w') as file:
+    file.write('siddharth_yadav')
+```
 ```
