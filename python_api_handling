@@ -1,0 +1,29 @@
+import requests
+
+def random_user_api_request():
+    url = "https://api.freeapi.app/api/v1/public/randomusers/user/random"
+    response = requests.get(url)
+    response_data = response.json()
+    # print(response_data)
+
+    if response_data["success"] and "data" in response_data:
+        user_data = response_data["data"]
+        # print(user_data)
+        user_name = user_data["login"]["username"]
+        country_name = user_data["location"]["country"]
+        # print(user_name)
+        # print(country_name)
+        return user_name,country_name
+    else:
+        raise Exception ("faild to fetch user detail")
+
+def main():
+    try:
+        name,country = random_user_api_request()
+        print(f"username: {name} \ncountry: {country}")
+    except Exception as e:
+        print(str(e))
+
+if __name__ == "__main__":
+    main()
+    
