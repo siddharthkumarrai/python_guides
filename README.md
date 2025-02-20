@@ -864,7 +864,11 @@ def random_user_api_request():
 
  random_user_api_request()
 ```
-
+# VIRTUAL ENVIRONMENT
+#### Create a new virtual environment
+```python
+py -m venv .venv
+```
 
 
 
