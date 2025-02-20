@@ -918,6 +918,8 @@ $ conda deactivate
 ```python
 conda remove --name py310 --all
 ```
+# Jupyter Notebook
+- file format extension in vscode is .ipynb
 
 
 
