@@ -888,9 +888,32 @@ py -m venv .venv
 ```python
 (.venv) D:\python_youtube_manager>pip list > requirements.txt
 ```
-
-
-
+# Anaconda
+```
+(base) PS D:\python_youtube_manager> python --version
+Python 3.12.3
+```
+```python
+(base) PS D:\python_youtube_manager> conda info
+```
+```python
+(base) PS D:\python_youtube_manager> conda env list
+# conda environments:
+#
+base                 * C:\Users\siddh\anaconda3
+```
+#### Create a new conda virtual environment
+```python
+(base) PS D:\python_youtube_manager>conda create --name py310 python=3.10
+```
+#### Activate a virtual environment
+```python
+ conda activate py310  
+```
+#### Deactivate a virtual environment
+```python
+$ conda deactivate  
+``` 
 
 
 
