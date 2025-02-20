@@ -913,7 +913,11 @@ base                 * C:\Users\siddh\anaconda3
 #### Deactivate a virtual environment
 ```python
 $ conda deactivate  
-``` 
+```
+#### Delete Environment 
+```python
+conda remove --name py310 --all
+```
 
 
 
