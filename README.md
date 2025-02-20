@@ -881,14 +881,10 @@ py -m venv .venv
 ```
 #### Requirements files
 - Install a list of requirements specified in a Requirements File.
-    - medhod 1:
-        ```python
-            (.venv) D:\python_youtube_manager>pip list > requirements.txt
-        ```
-    - method 2:
-        ```python
-            py -m pip install -r requirements.txt
-        ```
+```python
+(.venv) D:\python_youtube_manager>pip list > requirements.txt
+```
+
 
 
 
