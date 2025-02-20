@@ -865,7 +865,12 @@ def random_user_api_request():
  random_user_api_request()
 ```
 # VIRTUAL ENVIRONMENT
+- installation virtual environment globally (in system)
+```python
+pip install virtualenv
+```
 #### Create a new virtual environment
+- To create a virtual environment, go to your project’s directory and run the following command.
 ```python
 py -m venv .venv
 ```
