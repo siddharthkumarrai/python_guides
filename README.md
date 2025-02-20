@@ -879,6 +879,10 @@ py -m venv .venv
 ```python
 .\env_name\Scripts\activate
 ```
+#### Deactivate a virtual environment
+```python
+(.venv) D:\python_youtube_manager>deactivate
+```
 #### Requirements files
 - Install a list of requirements specified in a Requirements File.
 ```python
