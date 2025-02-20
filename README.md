@@ -874,6 +874,13 @@ pip install virtualenv
 ```python
 py -m venv .venv
 ```
+#### Activate a virtual environment
+- To run command in cmd (project directory)
+```python
+.\env_name\Scripts\activate
+```
+
+
 
 
 
